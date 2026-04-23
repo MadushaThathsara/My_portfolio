@@ -1,0 +1,155 @@
+.contact_section {
+  padding: 80px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background: transparent;
+}
+
+.contact_section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  text-align: center;
+  color: #239bff;
+}
+
+.contact_content {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact_content p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: white;
+  margin-bottom: 30px;
+}
+
+.contact_links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.contact_links a {
+  background: transparent;
+  border: 2px solid #239bff;
+  border-radius: 15px;
+  color: #239bff;
+  font-size: medium;
+  padding: 12px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.contact_links a svg {
+  font-size: 28px;
+}
+
+.contact_links a:hover {
+  animation: neon_glow 2s ease-in-out infinite;
+  transform: translateY(-2px);
+}
+
+@keyframes neon_glow {
+  0% {
+    box-shadow: 0 0 5px #239bff,
+      0 0 10px #239bff,
+      0 0 20px #239bff;
+  }
+
+  50% {
+    box-shadow: 0 0 10px #239bff,
+      0 0 20px #239bff,
+      0 0 40px #239bff;
+  }
+
+  100% {
+    box-shadow: 0 0 5px #239bff,
+      0 0 10px #239bff,
+      0 0 20px #239bff;
+  }
+}
+
+@media (max-width: 1025px) {
+  .contact_section h2 {
+    font-size: 2.3rem;
+  }
+
+  .contact_content p {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 769px) {
+  .contact_section {
+    padding: 40px 10px;
+  }
+
+  .contact_section h2 {
+    margin-bottom: 15px;
+  }
+  .contact_section h2 {
+    font-size: 1.9rem;
+  }
+
+  .contact_content p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 436px) {
+  .contact_links a {
+    width: 40px;
+    height: 40px;
+  }
+
+}
+
+@media (max-width: 375px) {
+  .contact_section {
+    padding: 30px 10px;
+  }
+
+  .contact_section h2 {
+    margin-bottom: 10px;
+  }
+
+  .contact_section h2 {
+    font-size: 1.6rem;
+  }
+
+  .contact_content p {
+    font-size: 0.9rem;
+  }
+
+  .contact_content {
+    width: 90%;
+  }
+
+  .contact_links a {
+    width: 30px;
+    height: 30px;
+  }
+
+  .contact_links a svg {
+    font-size: 24px;
+  }
+} 
+
+@media (max-width: 332px) {
+  .contact_links a {
+    width: 25px;
+    height: 25px;
+  }
+
+}

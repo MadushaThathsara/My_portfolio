@@ -1,0 +1,139 @@
+.services_section {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+  
+.services_section h2{
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #ffffff;
+}
+
+span {
+    color: #239bff;
+}
+  
+.services_grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(265px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+  
+.service_card {
+    padding: 1.5rem;
+    height: auto;
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    border: 1px solid #239bff;
+    
+}
+
+.service_card div {
+    color: #239bff;
+    width: 65px;
+    height: 65px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.service_icon {
+    font-size: 3rem !important;
+    color: inherit;
+}
+  
+.service_card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #d1cccc;
+}
+  
+.service_card p {
+    color: #b5acac;
+    line-height: 1.6;
+}
+  
+@media (max-width: 629px) {
+    .services_section h2 {
+        font-size: 2rem;
+    }
+    .services_grid {
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,1fr);
+    }
+
+    .service_card div {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 8px;
+    }
+      
+    .service_card h3 {
+        font-size: 1rem;
+        margin-bottom: px;
+    }
+      
+    .service_card p {
+        line-height: 1.3;
+    }
+} 
+
+@media (max-width: 480px) {
+    .services_section h2 {
+        font-size: 1.7rem;
+    }
+
+    .service_card {
+        padding: 1.1rem;
+    }
+
+    .service_card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+      
+    .service_card h3 {
+        font-size: 0.9rem;
+        margin-bottom: 0;
+        text-align: center;
+    }
+    
+    .service_card p {
+        display: none;
+    }
+}
+
+@media (max-width: 380px) {
+    .service_card div {
+        width: 50px;
+        height: 50px;
+    }
+
+    .service_card {
+        padding: 1rem;
+    }
+
+    .service_card h3 {
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 325px) {
+    .services_section h2 {
+        font-size: 1.5rem;
+    }
+
+    .service_card div {
+        width: 40px;
+        height: 40px;
+    }
+
+    .service_card h3 {
+        font-size: 0.6rem;
+    }
+}

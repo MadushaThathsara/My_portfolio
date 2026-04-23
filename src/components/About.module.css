@@ -1,0 +1,152 @@
+.about_section {
+  padding: 80px 20px;
+  max-width: 1300px;
+  margin: 0 auto;
+  background: transparent;
+  display: flex; 
+  gap: 5%;
+}
+
+.Image_content img {
+  width: 400px;
+  min-width: 400px;
+  border-radius: 5%;
+}
+
+.about_content {
+  font-size: 17px;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: start;
+}
+
+.about_content h3 {
+  font-size: 2.5em;
+  color: #239bff;
+}
+
+.about_content h2 {
+  font-size: 2.5em;
+  margin-bottom: 40px;
+  color: white;
+}
+
+.about_content p {
+  font-size: 1.2em;
+  line-height: 1.6;
+  color: #dcdada;
+  padding-bottom: 30px;
+  border-bottom: 2px solid white;
+}
+
+.about_content div {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.about_content div section {
+  display: flex;
+  gap: 10px;
+  width: 40%;
+}
+
+.about_content div section h4 {
+  color: white;
+  font-size: 1em;
+}
+
+.about_content button {
+  background: transparent;
+  border: 2px solid #239bff;
+  border-radius: 15px;
+  color: #239bff;
+  font-size: medium;
+  padding: 10px 20px;
+  margin-top: 30px;
+  font-weight: bold;
+}
+
+.about_content button:hover {
+  animation: neon_glow 2s ease-in-out infinite;
+  transform: translateY(-2px);
+}
+
+@keyframes neon_glow {
+  0% {
+    box-shadow: 0 0 5px #239bff,
+      0 0 10px #239bff,
+      0 0 20px #239bff;
+  }
+
+  50% {
+    box-shadow: 0 0 10px #239bff,
+      0 0 20px #239bff,
+      0 0 40px #239bff;
+  }
+
+  100% {
+    box-shadow: 0 0 5px #239bff,
+      0 0 10px #239bff,
+      0 0 20px #239bff;
+  }
+}
+
+@media (max-width: 1145px) {
+  .about_content div {
+    overflow: hidden;
+  }
+}
+
+@media (max-width: 1115px) {
+  .about_content {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 1033px) {
+  .about_content {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 960px) {
+  .about_content {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 920px) {
+  .about_section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about_content {
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .about_content div section {
+    width: 100%;
+    justify-content: center;
+  }
+} 
+
+@media (max-width: 590px) {
+  .about_content {
+    font-size: 13px;
+  }
+
+  .Image_content img {
+    min-width: 250px;
+    padding: 10px 10px;
+  }
+} 
+
+@media (max-width: 515px) {
+  .about_content {
+    font-size: 11px;
+  }
+} 

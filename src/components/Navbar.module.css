@@ -1,0 +1,158 @@
+span {
+  color: #239bff;
+}
+
+.navbar {
+  position: fixed;
+  width: 100vw;
+  z-index: 1000;
+  padding: 1rem 0;
+  transition: all 0.3s ease;
+  background: transparent;
+}
+
+.navbar_scrolled {
+  background-color: rgb(255 255 255 / 30%);
+  backdrop-filter: blur(10px);
+  padding: 0.5rem 0;
+}
+
+.navbar_scrolled .navbar_brand,
+.navbar_scrolled .navbar_links li {
+  color: #000000;
+}
+
+.navbar_container {
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar_brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ffffff;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  transform: translateX(100px);
+}
+
+.navbar_links {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+.navbar_links li {
+  color: #ffffff;
+  cursor: pointer;
+  font-size: medium;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 15px;
+  border: 1px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.navbar_links li:hover {
+  color: #239bff;
+  border-color: #239bff;
+}
+
+.navbar_hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 6px;
+  cursor: pointer;
+}
+
+.navbar_hamburger span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: currentColor;
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 897px) {
+  .navbar_brand {
+    transform: translateX(35px);
+  }
+
+  .navbar_links {
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 837px) {
+  .navbar_brand {
+    transform: translateX(30px);
+  }
+  .navbar_links {
+    gap: 0.7rem;
+  }
+}
+
+@media (max-width: 820px) {
+  .navbar_brand {
+    transform: translateX(25px);
+  }
+  .navbar_links {
+    gap: 0.3rem;
+  }
+}
+
+@media (max-width: 769px){
+  .navbar_brand {
+    transform: translateX(10px);
+  }
+
+  .navbar_links {
+    gap: 1px;
+  }
+}
+
+@media (max-width: 675px){
+  .navbar_links li {
+    padding: 10px 10px;
+    gap: 1px;
+  }
+}
+
+@media (max-width: 500px) {
+  .navbar_hamburger {
+    display: flex;
+  }
+
+  .navbar_links {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    background: white;
+    padding: 1rem 0;
+    gap: 0;
+    transform: translateY(-100%);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+  }
+
+  .navbar_links.active {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  .navbar_links li {
+    color: #333;
+    padding: 1rem 2rem;
+    text-align: center;
+  }
+
+  .navbar_links li:hover {
+    background: #f5f5f5;
+  }
+} 
