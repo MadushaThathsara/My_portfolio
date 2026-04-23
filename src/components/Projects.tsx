@@ -1,12 +1,13 @@
 import React from 'react';
 import styles from './Projects.module.css';
-import imgproject from '../images/download (17).jpeg';
+import chatify from '../images/chatify.png';
+import { on } from 'events';
 
 const Projects = () => {
   const projects = [
-    { name: 'Project 1',data:'This project about', img: imgproject },
-    { name: 'Project 2',data:'This project about', img: imgproject },
-    { name: 'Project 3',data:'This project about', img: imgproject }
+    { name: 'Chatify',data:'Online Chat Application', img: chatify, link:'https://chat-app-9hpg.onrender.com/login' },
+    { name: 'Project 2',data:'This project about', img: chatify },
+    { name: 'Project 3',data:'This project about', img: chatify }
   ];
 
   return (
@@ -15,7 +16,9 @@ const Projects = () => {
       <div className={styles.projects_container}>
       <div className={styles.projects_grid}>
         {projects.map((project, index) => (
-          <div className={styles.project_card} key={`${project.name}-${index}`}>
+          <div className={styles.project_card} key={`${project.name}-${index}`}
+          onClick={() => window.open(project.link, '_blank')}
+          >
             <div>
               <h3>{project.name}</h3>
               <p>{project.data}</p>
