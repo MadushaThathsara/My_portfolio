@@ -5,7 +5,7 @@
 }
   
 .services_section h2{
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin-bottom: 40px;
     color: #ffffff;
 }
@@ -31,23 +31,13 @@ span {
     
 }
 
-.service_card div {
-    color: #239bff;
-    width: 65px;
-    height: 65px;
-    margin-bottom: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 .service_icon {
-    font-size: 3rem !important;
-    color: inherit;
+    font-size: 2.2rem !important;
+    color: #239bff;
 }
   
 .service_card h3 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin-bottom: 15px;
     color: #d1cccc;
 }
@@ -55,6 +45,7 @@ span {
 .service_card p {
     color: #b5acac;
     line-height: 1.6;
+    font-size: 0.9rem;
 }
   
 @media (max-width: 629px) {
