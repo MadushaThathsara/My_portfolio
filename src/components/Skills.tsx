@@ -9,10 +9,21 @@ import imgNodejs from '../images/node-js-svgrepo-com.png';
 import imgExpress from '../images/express-svgrepo-com.png';
 import imgMongoDB from '../images/mongodb-svgrepo-com.png';
 import figma from '../images/figma-svgrepo-com.png';
+import imgMySQL from '../images/mysql.svg';
+import imgTailwindCss from '../images/tailwindcss.svg';
+import imgJava from '../images/java.svg';
+import imgGit from '../images/git.svg';
+import imgGithub from '../images/github.svg';
+import imgFirebase from '../images/firebase.svg';
+import imgPostman from '../images/postman.svg';
+import imgReactNative from '../images/react-native.svg';
+import imgExpo from '../images/expo.svg';
 
 const Skills = () => {
   const skills = [
     { name: 'React', img: imgReact },
+    { name: 'React Native', img: imgReactNative },
+    { name: 'Expo', img: imgExpo },
     { name: 'TypeScript', img: imgTypeScript },
     { name: 'JavaScript', img: imgJavaScript },
     { name: 'Html', img: imgHtml },
@@ -20,7 +31,14 @@ const Skills = () => {
     { name: 'Node.js', img: imgNodejs },
     { name: 'Express', img: imgExpress },
     { name: 'MongoDB', img: imgMongoDB },
+    { name: 'MySQL', img: imgMySQL },
     { name: 'Figma', img: figma },
+    { name: 'Tailwind CSS', img: imgTailwindCss },
+    { name: 'Java', img: imgJava },
+    { name: 'Git', img: imgGit },
+    { name: 'Github', img: imgGithub },
+    { name: 'Firebase', img: imgFirebase },
+    { name: 'Postman', img: imgPostman }
   ];
 
   return (

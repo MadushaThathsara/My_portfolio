@@ -14,7 +14,7 @@ span{
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
-  width: 721px;
+  width: 750px;
   padding: 30px;
   position: relative;
   z-index: 1;
@@ -22,12 +22,12 @@ span{
 
 .hero_content_text {
   position: relative;
-  top: 250px;
+  top: 210px;
 }
 
 .hero_content_text h1 {
   font-weight: bold; 
-  font-size: 3rem;
+  font-size: 2.5rem;
   margin-bottom: 10px;
 }
 
@@ -35,6 +35,7 @@ span{
   display: flex;
   gap: 10px;
   padding-left: 20px; 
+  font-size: 1rem;
 }
 
 .hero_contact div {
@@ -44,13 +45,13 @@ span{
 }
 
 .hero_content_text p{
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   opacity: 0.9; 
 }
 
 .hero_content button {
   margin-top: 20px;
-  transform: translateX(20px);
+  /* transform: translateX(20px); */
   background: transparent;
   border: 2px solid #239bff;
   border-radius: 15px;

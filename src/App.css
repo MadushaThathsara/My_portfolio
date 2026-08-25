@@ -5,6 +5,20 @@
   box-sizing: border-box;
 }
 
+/* Ensure smooth scrolling and offset for fixed navbar */
+html {
+  scroll-behavior: smooth;
+}
+
+section, [id] {
+  scroll-margin-top: 40px; /* Adjust 80px based on navbar height */
+}
+
+/* Except the About section - no top gap */
+#about {
+  scroll-margin-top: 0px;
+}
+
 body {
   font-family: "Varela Round", sans-serif;
   -webkit-font-smoothing: antialiased;

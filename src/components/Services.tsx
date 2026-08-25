@@ -1,21 +1,21 @@
 import React from 'react';
 import styles from './Services.module.css';
 import ViewInArIcon from '@mui/icons-material/ViewInAr';
-import DragIndicatorIcon from '@mui/icons-material/DragIndicator';
-import DesignServicesIcon from '@mui/icons-material/DesignServices';
-import SupportAgentIcon from '@mui/icons-material/SupportAgent';
-import AutoAwesomeMotionIcon from '@mui/icons-material/AutoAwesomeMotion';
-import QueryStatsIcon from '@mui/icons-material/QueryStats';
-// import { Style } from '@mui/icons-material';
+import LayersIcon from '@mui/icons-material/Layers';
+import CodeIcon from '@mui/icons-material/Code';
+import LanguageIcon from '@mui/icons-material/Language';
+import StorageIcon from '@mui/icons-material/Storage';
+import PhoneAndroidIcon from '@mui/icons-material/PhoneAndroid';
+import DatabaseIcon from '@mui/icons-material/Storage';
 
 const Services = () => {
 const services = [
-  { name: 'Web Devolopment', data:'Building responsive and user-friendly websites tailored to your needs.', icon: ViewInArIcon },
-  { name: 'UI/UX Design', data:'Designing intuitive interfaces with seamless user experiences.', icon: DragIndicatorIcon },
-  { name: 'Design Trends', data:'Applying modern design trends to craft fresh, engaging user experiences.', icon: DesignServicesIcon },
-  { name: 'Customer Support', data:'Providing reliable, friendly support to ensure smooth client experiences.', icon: SupportAgentIcon },
-  { name: 'Banding', data:'Designing strong brand identities that connect with your audience.', icon: AutoAwesomeMotionIcon },
-  { name: 'Marketing ', data:'Developing creative marketing strategies to grow and promote your business.', icon: QueryStatsIcon },
+  { name: 'Full Stack (MERN) Development', data:'Building complete web applications from frontend interfaces to backend systems and databases.', icon: LayersIcon },
+  { name: 'Frontend Development', data:'Creating responsive, modern, and user-friendly interfaces using React, TypeScript, and modern web technologies.', icon: CodeIcon },
+  { name: 'Backend Development', data:'Developing secure and scalable backend services, APIs, and server-side applications using Node.js and Java.', icon: ViewInArIcon },
+   { name: 'Web Devolopment', data:'Building responsive and user-friendly websites tailored to your needs.', icon: LanguageIcon },
+  { name: 'Mobile App Development', data:'Building cross-platform mobile applications with React Native and modern mobile technologies.', icon: PhoneAndroidIcon },
+  { name: 'Database Management ', data:'Designing and managing efficient databases using MongoDB and other database technologies.', icon: DatabaseIcon },
 ];
 
   return (
