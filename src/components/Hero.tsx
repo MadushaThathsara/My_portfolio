@@ -16,25 +16,25 @@ const Hero = () => {
         </div>
         <div className={styles.hero_contact}>
             <div>
-                <h3>Email</h3>
-                <a href="mailto:madushathathsara994@gmail.com">
-                    madushathathsara994@gmail.com
+                <a href="mailto:madushathathsara994@gmail.com" target="_blank" >
+                  <h3>Email</h3>
+                  <p>madushathathsara994@gmail.com</p>
                 </a>
             </div>
             <div>
-                <h3>Phone</h3>
-                <a href="tel:+94786348028">
-                    +94 78 634 8028
+                <a href="tel:+94786348028" target="_blank" >
+                  <h3>Phone</h3>
+                  <p>+94 78 634 8028</p>
                 </a>
             </div>
             <div>
-                <h3>Location</h3>
                 <a 
                     href="https://maps.google.com/?q=Matara,+Sri+Lanka" 
                     target="_blank" 
                     rel="noopener noreferrer"
                 >
-                    Matara, Sri Lanka
+                  <h3>Location</h3>
+                  <p>Matara, Sri Lanka</p>
                 </a>
             </div>
         </div>

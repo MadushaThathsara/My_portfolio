@@ -3,11 +3,12 @@
   max-width: 1200px;
   margin: 0 auto;
   background: transparent;
+  box-sizing: border-box;
 }
 
 .contact_section h2 {
-  font-size: 2rem;
-  margin-bottom: 10px;
+  font-size: clamp(1.6rem, 4vw, 2.2rem);
+  margin-bottom: 15px;
   text-align: center;
   color: #239bff;
 }
@@ -16,22 +17,24 @@
   text-align: center;
   max-width: 600px;
   margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .contact_content p {
-  font-size: 1rem;
+  font-size: clamp(0.95rem, 2vw, 1.1rem);
   line-height: 1.6;
   color: white;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .contact_links {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  align-items: center;
+  gap: 16px;
   margin-top: 30px;
   flex-wrap: wrap;
-  margin: 0 auto;
 }
 
 .contact_links a {
@@ -39,20 +42,22 @@
   border: 2px solid #239bff;
   border-radius: 15px;
   color: #239bff;
-  font-size: medium;
-  padding: 12px;
-  font-weight: bold;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 50px;
-  height: 50px;
+  width: 48px;
+  height: 48px;
+  padding: 0;
+  box-sizing: border-box;
   text-decoration: none;
   transition: all 0.3s ease;
+  flex-shrink: 0;
 }
 
 .contact_links a svg {
-  font-size: 28px;
+  font-size: 24px;
+  width: 1em;
+  height: 1em;
 }
 
 .contact_links a:hover {
@@ -80,76 +85,44 @@
   }
 }
 
-@media (max-width: 1025px) {
-  .contact_section h2 {
-    font-size: 2.3rem;
-  }
-
-  .contact_content p {
-    font-size: 1.1rem;
-  }
-}
-
-@media (max-width: 769px) {
+/* Tablet Screens (≤ 768px) */
+@media (max-width: 768px) {
   .contact_section {
-    padding: 40px 10px;
+    padding: 60px 16px;
   }
 
-  .contact_section h2 {
-    margin-bottom: 15px;
-  }
-  .contact_section h2 {
-    font-size: 1.9rem;
-  }
-
-  .contact_content p {
-    font-size: 1rem;
-  }
-}
-
-@media (max-width: 436px) {
-  .contact_links a {
-    width: 40px;
-    height: 40px;
-  }
-
-}
-
-@media (max-width: 375px) {
-  .contact_section {
-    padding: 30px 10px;
-  }
-
-  .contact_section h2 {
-    margin-bottom: 10px;
-  }
-
-  .contact_section h2 {
-    font-size: 1.6rem;
-  }
-
-  .contact_content p {
-    font-size: 0.9rem;
-  }
-
-  .contact_content {
-    width: 90%;
+  .contact_links {
+    gap: 14px;
   }
 
   .contact_links a {
-    width: 30px;
-    height: 30px;
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
   }
 
   .contact_links a svg {
-    font-size: 24px;
+    font-size: 22px;
   }
-} 
+}
 
-@media (max-width: 332px) {
+/* Mobile Screens (≤ 480px) */
+@media (max-width: 480px) {
+  .contact_section {
+    padding: 40px 12px;
+  }
+
+  .contact_links {
+    gap: 12px;
+  }
+
   .contact_links a {
-    width: 25px;
-    height: 25px;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
   }
 
+  .contact_links a svg {
+    font-size: 20px;
+  }
 }
