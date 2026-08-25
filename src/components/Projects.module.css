@@ -1,35 +1,31 @@
 .projects_section {
-  font-size: 15px;
-  padding: 50px 20px;
+  padding: 60px 24px;
   max-width: 1200px;
   margin: 0 auto;
-  background: transparent;
+  box-sizing: border-box;
 }
 
-.projects_section h2{
-  font-size: 2rem;
-  margin-bottom: 40px;
+.projects_section h2 {
+  font-size: clamp(1.8rem, 4vw, 2.4rem);
+  margin-bottom: 30px;
   text-align: center;
   color: #239bff;
 }
 
-.projects_section span{
-  color: #ffffff; 
+.projects_section h2 span {
+  color: #ffffff;
 }
 
 .projects_container {
   display: flex;
   overflow-x: auto;
-  scroll-snap-type: x proximity;
+  scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
   cursor: grab;
   user-select: none;
   -webkit-overflow-scrolling: touch;
-  padding: 20px 5px;
-
-  /* Hide scrollbar */
-  scrollbar-width: none;
-  -ms-overflow-style: none;
+  padding: 15px 0 30px 0;
+  width: 100%;
 }
 
 .projects_container::-webkit-scrollbar {
@@ -45,11 +41,9 @@
 
 .projects_grid {
   display: flex;
-  gap: 30px;
-  padding: 0 10px;
-  width: max-content;
+  gap: 20px;
+  width: 100%;
 }
-
 
 @keyframes neon_glow {
   0% {
@@ -72,93 +66,157 @@
 }
 
 .project_card {
-  background-color: #191919;
-  border-radius: 10px;
-  padding: 20px;
-  font-size: 15px;
-  width: 260px;
+  background-color: #121212;
+  border: 1px solid rgba(35, 155, 255, 0.25);
+  border-radius: 16px;
+  padding: 18px 14px;
+  /* PC Screen (> 768px): Show exactly 4 project cards */
+  width: calc((100% - 60px) / 4);
   flex-shrink: 0;
   scroll-snap-align: start;
-  transition: transform 0.3s ease;
+  transition: all 0.3s ease;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  box-sizing: border-box;
 }
 
 .project_card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-6px);
   animation: neon_glow 2s ease-in-out infinite;
+  border-color: #239bff;
+  box-shadow: 0 8px 25px rgba(35, 155, 255, 0.25);
 }
 
 .project_card h3 {
-  font-size: 1.3rem;
-  color: #d1cccc;
+  font-size: 1.15rem;
+  color: #ffffff;
   text-align: center;
+  margin: 0 0 6px 0;
+  font-weight: 700;
 }
 
 .project_card p {
   color: #b5acac;
   text-align: center;
-  font-size: 0.9em;
+  font-size: 0.88rem;
+  margin: 0 0 12px 0;
+  line-height: 1.4;
 }
 
-@media (max-width: 1025px) {
-  .projects_section {
-    font-size: 13px;
-  }
+.project_card img {
+  width: 100%;
+  height: 135px;
+  object-fit: cover;
+  border-radius: 10px;
+}
 
-  .project_card {
-    font-size: 13px;
+@keyframes neon_glow {
+  0% {
+    box-shadow: 0 0 5px #239bff, 0 0 10px #239bff, 0 0 20px #239bff;
   }
-
-  .projects_section h2{
-    margin-bottom: 30px;
+  50% {
+    box-shadow: 0 0 10px #239bff, 0 0 20px #239bff, 0 0 35px #239bff;
+  }
+  100% {
+    box-shadow: 0 0 5px #239bff, 0 0 10px #239bff, 0 0 20px #239bff;
   }
 }
 
+/* Tablet Screens (≤ 768px) */
 @media (max-width: 769px) {
   .projects_section {
-    font-size: 12px;
+    padding: 50px 20px;
+  }
+
+  .projects_section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 24px;
+  }
+
+  .projects_grid {
+    gap: 16px;
   }
 
   .project_card {
-    font-size: 12px;
+    padding: 16px 12px;
+    width: calc((100% - 32px) / 3);
   }
 
-  .projects_section h2{
+  .project_card h3 {
+    font-size: 1.05rem;
+  }
+
+  .project_card p {
+    font-size: 0.82rem;
+  }
+
+  .project_card img {
+    height: 120px;
+  }
+}
+
+/* Mobile Screens (≤ 550px): Show exactly 2 project cards */
+@media (max-width: 550px) {
+  .projects_section {
+    padding: 40px 14px;
+  }
+
+  .projects_section h2 {
+    font-size: 1.5rem;
     margin-bottom: 20px;
   }
 
   .projects_grid {
-    gap: 20px;
-    padding: 10px;
-  }
-}
-
-@media (max-width: 680px){
-  .projects_section {
-    font-size: 11px;
+    gap: 10px;
   }
 
   .project_card {
-    font-size: 11px;
+    padding: 12px 8px;
+    width: calc((100% - 10px) / 2);
+    border-radius: 12px;
   }
 
-  .projects_section h2{
-    margin-bottom: 10px;
+  .project_card h3 {
+    font-size: 0.92rem;
+  }
+
+  .project_card p {
+    font-size: 0.78rem;
+    margin-bottom: 8px;
+  }
+
+  .project_card img {
+    height: 105px;
   }
 }
 
-@media (max-width: 425px) {
-  .projects_section {
-    font-size: 10px;
+/* Small Mobile Screens (≤ 360px): Show exactly 2 project cards */
+@media (max-width: 360px) {
+  .projects_section h2 {
+    font-size: 1.3rem;
+    margin-bottom: 16px;
+  }
+
+  .projects_grid {
+    gap: 6px;
   }
 
   .project_card {
-    font-size: 10px;
+    padding: 10px 6px;
+    width: calc((100% - 6px) / 2);
   }
 
-  .projects_section h2{
-    margin-bottom: 5px;
+  .project_card h3 {
+    font-size: 0.82rem;
+  }
+
+  .project_card p {
+    font-size: 0.72rem;
+    line-height: 1.3;
+  }
+
+  .project_card img {
+    height: 90px;
   }
 }

@@ -27,7 +27,7 @@ const About = () => {
           </section>
           <section>
             <h4>Email: </h4>
-            <h4>madushathathsara@994@gmail.com</h4>
+            <h4 className={styles.truncate_email}>madushathathsara994@gmail.com</h4>
           </section>
         </div>
         <button>

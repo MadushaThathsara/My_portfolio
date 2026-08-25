@@ -32,6 +32,8 @@ const Projects = () => {
       }
     };
 
+    container.addEventListener('wheel', handleWheel, { passive: false });
+    return () => container.removeEventListener('wheel', handleWheel);
   }, []);
 
   // Mouse Drag Handlers
