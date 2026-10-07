@@ -1,11 +1,12 @@
 import React, { useEffect, useRef, useState } from 'react';
 import styles from './Projects.module.css';
 import chatify from '../images/chatify.png';
+import staynest from '../images/staynest.png';
 
 const Projects = () => {
   const projects = [
     { name: 'Chatify', data: 'Online Chat Application', img: chatify, link: 'https://chat-app-9hpg.onrender.com/login' },
-    { name: 'StayNest', data: 'Online Bording application UI/UX Design', img: chatify, link: 'https://www.behance.net/gallery/255623253/StayNest-Find-your-next-home-away-from-home' },
+    { name: 'StayNest', data: 'Online mobile Bording application UI/UX Design', img: staynest, link: 'https://www.behance.net/gallery/255623253/StayNest-Find-your-next-home-away-from-home' },
     { name: 'Project 3', data: 'This project about', img: chatify },
     { name: 'Project 4', data: 'This project about', img: chatify },
     { name: 'Project 5', data: 'This project about', img: chatify }
