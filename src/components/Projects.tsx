@@ -5,7 +5,7 @@ import chatify from '../images/chatify.png';
 const Projects = () => {
   const projects = [
     { name: 'Chatify', data: 'Online Chat Application', img: chatify, link: 'https://chat-app-9hpg.onrender.com/login' },
-    { name: 'Project 2', data: 'This project about', img: chatify },
+    { name: 'StayNest', data: 'Online Bording application UI/UX Design', img: chatify, link: 'https://www.behance.net/gallery/255623253/StayNest-Find-your-next-home-away-from-home' },
     { name: 'Project 3', data: 'This project about', img: chatify },
     { name: 'Project 4', data: 'This project about', img: chatify },
     { name: 'Project 5', data: 'This project about', img: chatify }
