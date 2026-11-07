@@ -2,14 +2,21 @@ import React, { useEffect, useRef, useState } from 'react';
 import styles from './Projects.module.css';
 import chatify from '../images/chatify.png';
 import staynest from '../images/staynest.png';
+import TravelTrack from '../images/TravelTrack.jpg';
+import ColorAssist from '../images/ColorAssist.jpg';
+import AraliyaScents from '../images/Araliya Scents.png';
+import GPACalculator from '../images/GPACalculator.png';
+import NutriSnap from '../images/NutriSnap.png';
 
 const Projects = () => {
   const projects = [
     { name: 'Chatify', data: 'Online Chat Application', img: chatify, link: 'https://chat-app-9hpg.onrender.com/login' },
     { name: 'StayNest', data: 'Online mobile Bording application UI/UX Design', img: staynest, link: 'https://www.behance.net/gallery/255623253/StayNest-Find-your-next-home-away-from-home' },
-    { name: 'Project 3', data: 'This project about', img: chatify },
-    { name: 'Project 4', data: 'This project about', img: chatify },
-    { name: 'Project 5', data: 'This project about', img: chatify }
+    { name: 'Travel Tracker', data: 'Tracking travel locations, messaging, and sending SOS alerts.', img: TravelTrack, link: 'https://github.com/RASHMIKA-LKI/TravelTrack'},
+    { name: 'ColorAssist', data: 'Smart IoT-Based Color Identification & Safety Assistant System', img: ColorAssist },
+    { name: 'Araliya Scents', data: 'Full-Stack Web Application (Group Project)', img: AraliyaScents, link:'https://github.com/nethara-vidmantha/araliya-scents-frontend' },
+    { name: 'GPA Calculator', data: 'A web app for calculating and tracking student GPA.', img: GPACalculator, link:'https://github.com/MadushaThathsara/GPA-Calculator' },
+    { name: 'NutriSnap', data: 'AI-Powered Nutrition Tracking Application ', img: NutriSnap, link:'https://github.com/MadushaThathsara/GYM' }
   ];
 
   const containerRef = useRef<HTMLDivElement>(null);
