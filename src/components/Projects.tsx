@@ -10,7 +10,7 @@ import NutriSnap from '../images/NutriSnap.png';
 
 const Projects = () => {
   const projects = [
-    { name: 'Chatify', data: 'Online Chat Application', img: chatify, link: 'https://chat-app-9hpg.onrender.com/login' },
+    { name: 'Chatify', data: 'Online Chat Application', img: chatify, link: 'https://github.com/MadushaThathsara/chat_app' },
     { name: 'StayNest', data: 'Online mobile Bording application UI/UX Design', img: staynest, link: 'https://www.behance.net/gallery/255623253/StayNest-Find-your-next-home-away-from-home' },
     { name: 'Travel Tracker', data: 'Tracking travel locations, messaging, and sending SOS alerts.', img: TravelTrack, link: 'https://github.com/RASHMIKA-LKI/TravelTrack'},
     { name: 'ColorAssist', data: 'Smart IoT-Based Color Identification & Safety Assistant System', img: ColorAssist },
