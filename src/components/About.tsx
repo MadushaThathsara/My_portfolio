@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './About.module.css';
 import img from '../images/WhatsApp Image 2025-05-25 at 00.15.55_29d24784.jpg';
+import cv from '../assets/MadushaThathsaraCV.pdf';
 
 const About = () => {
   return (
@@ -31,7 +32,7 @@ const About = () => {
           </section>
         </div>
         <button>
-          <a href="">Download CV</a>
+          <a href={cv} download="MadushaThathsaraCV.pdf">Download CV</a>
         </button>
       </div>
     </section>
